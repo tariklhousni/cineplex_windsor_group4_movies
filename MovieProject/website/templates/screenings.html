@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Screening Schedule</title>
+    <style>
+        table { width: 90%; margin: auto; border-collapse: collapse; }
+        th, td { padding: 8px; border: 1px solid #aaa; text-align: center; }
+        th { background-color: #eee; }
+    </style>
+</head>
+<body style="font-family: sans-serif;">
+
+    <!-- Back to home button (top-left corner) -->
+    <div style="position: absolute; top: 10px; left: 10px;">
+        <a href="/">← Back to Home</a>
+    </div>
+
+    <h2 style="text-align:center;">Screening Schedule</h2>
+
+    <table>
+        <tr>
+            {% for col in screenings[0].keys() %}
+                <th>{{ col }}</th>
+            {% endfor %}
+        </tr>
+
+        {% for screening in screenings %}
+        <tr>
+            {% for key, value in screening.items() %}
+                <td>{{ value }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <div style="text-align:center; margin-top: 20px;">
+        <a href="/">← Back to Home</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+/* Make the links look like buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Green button for movie list */
+.movie {
+    background-color: green;
+}
+
+/* Blue button for screenings */
+.screening {
+    background-color: blue;
+}

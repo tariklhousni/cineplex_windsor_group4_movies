@@ -5,27 +5,23 @@ It was made using Python and Flask.
 
 ## Project Structure
 
-MovieProject/
-│
-├── data_preprocessing/
-│   ├── load_data_to_db.py
-│   ├── movie_data.csv
-│   └── screenings_schedule.csv
-│
-├── database/
-│   └── movies.db
-│
-├── website/
-│   ├── app.py
-│   ├── static/
-│   │   └── index_style.css
-│   └── templates/
-│       ├── index.html
-│       ├── movie_list.html
-│       └── screenings.html
-│
-├── requirements.txt
-└── README.md
+📦MovieProject
+ ┣ 📂database
+ ┃ ┗ 📜movies.db
+ ┣ 📂data_preprocessing
+ ┃ ┣ 📜load_data_to_db.py
+ ┃ ┣ 📜movie_data.csv
+ ┃ ┗ 📜screenings_schedule.csv
+ ┣ 📂website
+ ┃ ┣ 📂static
+ ┃ ┃ ┗ 📜index_style.css
+ ┃ ┣ 📂templates
+ ┃ ┃ ┣ 📜index.html
+ ┃ ┃ ┣ 📜movie_list.html
+ ┃ ┃ ┗ 📜screenings.html
+ ┃ ┗ 📜app.py
+ ┣ 📜README.md
+ ┗ 📜requirements.txt
 
 ## Features
 
@@ -43,3 +39,4 @@ MovieProject/
 2. Run the file app.py
 3. Copy the address shown in your terminal and past it in your web browser bar.
 You will see the homepage, and navigate using the buttons to view movies or screenings.
+
